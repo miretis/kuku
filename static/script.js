@@ -7,7 +7,7 @@ const input = document.getElementById('input');
 form.addEventListener('submit', function(e){
     e.preventDefault();
     if(input.value){
-        socket.emit('new_message', input_value);
+        socket.emit('new_message', input.value);
         input.value = '';
     }
 })
