@@ -52,5 +52,6 @@ io.on('connection', (socket) => {
 
     socket.on('new_message', (message) => {
         console.log(message); 
+        io.emit('message', message);
     });
 });
